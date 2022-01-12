@@ -1,0 +1,189 @@
+html {
+    font-size: 16px;
+    font-family: 'EB Garamond', serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Redimensión de fuente utilizando rem */
+
+p {
+    font-size: 1.3rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a {
+    font-size: 2rem;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+}
+
+.column-nav {
+    width: 25%;
+    float: left;
+    font-size: medium;
+    position: fixed;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+    margin-left: 25%;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+
+/* Otras clases */
+
+header {
+    height: 100vh;
+    background-image: url("../img/cafe.jpg");
+    background-size: cover;
+    background-position-y: -7vh;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+}
+
+#card-1 {
+    background-image: url(../img/campana.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-2 {
+    background-image: url(../img/vela.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-3 {
+    background-image: url(../img/arbol1.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-4 {
+    background-image: url(../img/edificio.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.padding-s {
+    padding: 2%;
+}
+
+article {
+    background-color: rgb(227, 227, 277);
+}
+
+footer {
+    background-color: #495057;
+    color: white;
+}
+
+#lastfooter {
+    background-color: black;
+    margin: 0%;
+}
+
+#lastfooter p {
+    margin: 0;
+    color: white;
+}
+
+.back-white {
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    /*reglas*/
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    #caja-10 {
+        width: 100%;
+    }
+    .column-nav {
+        width: 100%;
+        position: relative;
+    }
+    .column-75 {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
